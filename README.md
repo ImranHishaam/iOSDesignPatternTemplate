@@ -11,6 +11,10 @@ This project allows to create Swift templates in a quick manner based on the des
 
 ## Home Brew Installation 
 
+
+
+## Install with Alcatraz (Coming soon)
+
 ## License
 The MIT License (MIT)
 
