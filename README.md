@@ -8,3 +8,10 @@ Xcode templates for Swift based on design patterns (Objective-C coming soon)
 ## Introduction
 
 This project allows to create Swift templates in a quick manner based on the desired design pattern. This helps in reduce the time spend on figuring out how a design pattern is based. With these templates the more focus can be given to the actual problem than the design or stucture of the project.
+
+## Home Brew Installation 
+
+## License
+The MIT License (MIT)
+
+Copyright (c) 2015 Imran Hishaam
