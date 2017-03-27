@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+
+home = Dir.home
+folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates"
+
+FileUtils.mkdir_p(home + folderPath) unless File.exists?(home + folderPath)
+
+FileUtils.move 'VIPER.xctemplate', (home + folderPath)
