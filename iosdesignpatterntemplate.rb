@@ -22,7 +22,6 @@ class Iosdesignpatterntemplate < Formula
     system "make", "install" # if this fails, try separate make/make install steps
     
     bin.install "viperscript"
-    
   end
 
   test do
