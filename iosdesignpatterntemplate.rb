@@ -3,26 +3,15 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class Iosdesignpatterntemplate < Formula
-  desc "Desing pattern templating"
-  homepage "https://github.com/ImranHishaam/iOSDesignPatternTemplate/"
+  desc ""
+  homepage ""
   url "https://github.com/ImranHishaam/iOSDesignPatternTemplate/archive/v1.0.0.tar.gz"
   sha256 "f3c2210a9e6b0d1f6c894ffa91572c024f616c44d43cafc094daa0620956e50d"
 
   # depends_on "cmake" => :build
 
-  def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-
-    # Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-     system "cmake", ".", *std_cmake_args
-    system "make", "install" # if this fails, try separate make/make install steps
-    
+  def install    
     bin.install "viperscript"
-    
   end
 
   test do
