@@ -3,10 +3,10 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class Iosdesignpatterntemplate < Formula
-  desc "Desing pattern templating"
-  homepage "https://github.com/ImranHishaam/iOSDesignPatternTemplate/"
-  url "https://github.com/ImranHishaam/iOSDesignPatternTemplate/archive/v1.0.0.tar.gz"
-  sha256 "f3c2210a9e6b0d1f6c894ffa91572c024f616c44d43cafc094daa0620956e50d"
+  desc ""
+  homepage ""
+  url "https://github.com/ImranHishaam/iOSDesignPatternTemplate/archive/v1.0.1.tar.gz"
+  sha256 "5c849d7b9ea4b5e180dca2147ddf2414a8d922fb52e0991d753b595e7b59b74b"
 
   # depends_on "cmake" => :build
 
@@ -18,7 +18,7 @@ class Iosdesignpatterntemplate < Formula
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
-     system "cmake", ".", *std_cmake_args
+    # system "cmake", ".", *std_cmake_args
     system "make", "install" # if this fails, try separate make/make install steps
     
     bin.install "viperscript"
