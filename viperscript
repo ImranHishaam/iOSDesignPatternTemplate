@@ -8,9 +8,9 @@ home = Dir.home
 
 folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates/VIPER.xctemplate/"
 
-modelName = "iOSDesignPatternTemplate-v.1.0.7"
+modelName = "iOSDesignPatternTemplate-1.0.8"
 TAR_LONGLINK = '././@LongLink'
-tar_gz_archive = '/Library/Caches/Homebrew/iOSDesignPatternTemplate-1.0.7.tar.gz'
+tar_gz_archive = '/Library/Caches/Homebrew/iOSDesignPatternTemplate-1.0.8.tar.gz'
 destination = '/Library/Caches/Homebrew/'
 extractDestination = home + destination + modelName + '/VIPER.xctemplate/.'
 
