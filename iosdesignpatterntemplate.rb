@@ -5,8 +5,8 @@
 class Iosdesignpatterntemplate < Formula
   desc ""
   homepage ""
-  url "https://github.com/ImranHishaam/iOSDesignPatternTemplate/archive/v1.0.8.tar.gz"
-  sha256 "bd9774a5a2b83d6dfc413fb4b57c5c7870c60cad555e59d87af32d2647c7ea0e"
+  url "https://github.com/ImranHishaam/iOSDesignPatternTemplate/archive/v1.0.9.tar.gz"
+  sha256 "b6680ae7dafc30d8364b9a502b09f49a4331a1accc827db0025032fd2c6a65df"
 
   # depends_on "cmake" => :build
 
