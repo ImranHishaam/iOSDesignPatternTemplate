@@ -3,7 +3,7 @@
 require 'fileutils'
 
 home = Dir.home
-folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates/VIPER.xctemplate"
+folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates/VIPER.xctemplate/"
 
 FileUtils.mkdir_p(home + folderPath) unless File.exists?(home + folderPath)
 
