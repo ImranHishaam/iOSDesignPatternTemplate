@@ -18,7 +18,7 @@ If Homebrew is not installed click the below link (https://brew.sh/)
 $ brew install https://raw.githubusercontent.com/ImranHishaam/iOSDesignPatternTemplate/master/iosdesignpatterntemplate.rb
 $ addTemplateDesign
 ``` 
-Once you open Xcode and add new files
+Once you open Xcode and add new files those templates will be visible.
 
 ## Install with Alcatraz (Coming soon)
 
