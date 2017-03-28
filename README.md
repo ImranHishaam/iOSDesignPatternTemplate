@@ -13,7 +13,7 @@ This project allows to create Swift templates in a quick manner based on the des
 
 Open `Terminal.app` and paste the below commands:
 
-If Homebrew is not installed click the below link (https://brew.sh/)
+If Homebrew is not installed click the below link ![Swift Version](https://brew.sh/)
 ```bash
 $ brew install https://raw.githubusercontent.com/ImranHishaam/iOSDesignPatternTemplate/master/iosdesignpatterntemplate.rb
 $ viperscript
