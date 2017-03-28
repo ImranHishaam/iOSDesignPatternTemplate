@@ -6,13 +6,13 @@ require 'zlib'
 
 home = Dir.home
 
-folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates/VIPER.xctemplate/"
+folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/"
 
 modelName = "iOSDesignPatternTemplate-1.0.8"
 TAR_LONGLINK = '././@LongLink'
 tar_gz_archive = '/Library/Caches/Homebrew/iOSDesignPatternTemplate-1.0.8.tar.gz'
 destination = '/Library/Caches/Homebrew/'
-extractDestination = home + destination + modelName + '/VIPER.xctemplate/.'
+extractDestination = home + destination + modelName + 'Custom\ Templates/.'
 
 Gem::Package::TarReader.new( Zlib::GzipReader.open (home + tar_gz_archive) ) do |tar|
   dest = nil
