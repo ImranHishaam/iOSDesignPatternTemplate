@@ -7,4 +7,4 @@ folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templat
 
 FileUtils.mkdir_p(home + folderPath) unless File.exists?(home + folderPath)
 
-FileUtils.cp_r 'VIPER.xctemplate/.', (home + folderPath)
+FileUtils.cp_r('VIPER.xctemplate/.', (home + folderPath))
