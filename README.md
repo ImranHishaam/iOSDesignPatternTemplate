@@ -16,7 +16,7 @@ Open `Terminal.app` and paste the below commands:
 If Homebrew is not installed click the below link (https://brew.sh/)
 ```bash
 $ brew install https://raw.githubusercontent.com/ImranHishaam/iOSDesignPatternTemplate/master/iosdesignpatterntemplate.rb
-$ viperscript
+$ addTemplateDesign
 ``` 
 Once you open Xcode and add new files
 
