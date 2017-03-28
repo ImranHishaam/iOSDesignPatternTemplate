@@ -1,15 +1,47 @@
 #!/usr/bin/env ruby
 
 require 'fileutils'
+require 'rubygems/package'
+require 'zlib'
 
 home = Dir.home
 
-system 'git clone https://github.com/ImranHishaam/iOSDesignPatternTemplate.git' #=> true (prints 'hi')
-system 'echo hi >&2' #=> true (prints 'hi' to stderr)
-system 'exit 1' #=> nil
-
 folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates/VIPER.xctemplate/"
+
+modelName = "iOSDesignPatternTemplate-v.1.0.7"
+TAR_LONGLINK = '././@LongLink'
+tar_gz_archive = '/Library/Caches/Homebrew/iOSDesignPatternTemplate-1.0.7.tar.gz'
+destination = '/Library/Caches/Homebrew/'
+extractDestination = home + destination + modelName + '/VIPER.xctemplate/.'
+
+Gem::Package::TarReader.new( Zlib::GzipReader.open (home + tar_gz_archive) ) do |tar|
+  dest = nil
+  tar.each do |entry|
+    if entry.full_name == TAR_LONGLINK
+      dest = File.join (home + destination), entry.read.strip
+      next
+    end
+    dest ||= File.join (home + destination), entry.full_name
+    if entry.directory?
+      FileUtils.rm_rf dest unless File.directory? dest
+      FileUtils.mkdir_p dest, :mode => entry.header.mode, :verbose => false
+    elsif entry.file?
+      FileUtils.rm_rf dest unless File.file? dest
+      File.open dest, "wb" do |f|
+        f.print entry.read
+      end
+      FileUtils.chmod entry.header.mode, dest, :verbose => false
+    elsif entry.header.typeflag == '2' #Symlink!
+      File.symlink entry.header.linkname, dest
+    end
+    dest = nil
+  end
+end
 
 FileUtils.mkdir_p(home + folderPath) unless File.exists?(home + folderPath)
 
-FileUtils.cp_r('VIPER.xctemplate/.', (home + folderPath))
+FileUtils.cp_r(extractDestination , (home + folderPath))
+
+FileUtils.remove_dir(home + destination + modelName)
+
+puts "The Templates are ready to use. Happy Coding..."
