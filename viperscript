@@ -3,6 +3,11 @@
 require 'fileutils'
 
 home = Dir.home
+
+system 'git clone https://github.com/ImranHishaam/iOSDesignPatternTemplate.git' #=> true (prints 'hi')
+system 'echo hi >&2' #=> true (prints 'hi' to stderr)
+system 'exit 1' #=> nil
+
 folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/Custom\ Templates/VIPER.xctemplate/"
 
 FileUtils.mkdir_p(home + folderPath) unless File.exists?(home + folderPath)
