@@ -8,9 +8,9 @@ home = Dir.home
 
 folderPath = "/Library/Developer/Xcode/Templates/File\ Templates/"
 
-modelName = "iOSDesignPatternTemplate-1.0.9"
+modelName = "iOSDesignPatternTemplate-1.0"
 TAR_LONGLINK = '././@LongLink'
-tar_gz_archive = '/Library/Caches/Homebrew/iOSDesignPatternTemplate-1.0.9.tar.gz'
+tar_gz_archive = '/Library/Caches/Homebrew/iOSDesignPatternTemplate-1.0.tar.gz'
 destination = '/Library/Caches/Homebrew/'
 extractDestination = home + destination + modelName + '/Custom Templates/.'
 

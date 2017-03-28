@@ -5,9 +5,9 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>An empty VIPER Module.</string>
+	<string>An empty Singleton Class.</string>
 	<key>Summary</key>
-	<string>An empty VIPER Module.</string>
+	<string>An empty Singleton Class.</string>
 	<key>SortOrder</key>
 	<string>30</string>
 	<key>AllowedTypes</key>
@@ -26,9 +26,9 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>VIPER Module Name : </string>
+			<string>Singleton Class. Name : </string>
 			<key>Description</key>
-			<string>The name of the VIPER Module to create</string>
+			<string>The name of the Singleton Class to create</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>NotPersisted</key>
