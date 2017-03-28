@@ -11,7 +11,7 @@ class Iosdesignpatterntemplate < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install "viperscript"
+    bin.install "addTemplateDesign"
   end
 
   test do
